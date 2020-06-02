@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  font-family: 'Abril Fatface', cursive;
+  background-color: rgb(47, 113, 167);
+  text-align: center;
+  color: #fcf064;
+}
+
+header img {
+  height: 200px;
+  padding-top: 0.75rem;
+}
+
+footer {
+  font-family: monospace;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+}
+
+header div {
+  /* Placeholder */
+  height: 188px;
+}
+
+.genie {
+  height: 200px;
+  padding-top: 0.75rem;
+  position: absolute;
+  display: flex;
+  align-self: center;
+}
+
+.genie-move {
+  animation: genie-move 3s;
+}
+
+.genie-rotate {
+  animation: genie-rotate 1s;
+}
+
+.genie-motion {
+  animation: genie-motion 10s infinite;
+}
+
+@keyframes genie-move {
+  15% {
+    transform: rotate(180deg);
+  }
+  45% {
+    transform: translateY(350px);
+  }
+  90% {
+    transform: translateY(350px);
+  }
+}
+
+@keyframes genie-rotate {
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes genie-motion {
+  0% {
+    transform: rotate(0eg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+}
